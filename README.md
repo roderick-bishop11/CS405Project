@@ -24,6 +24,11 @@ For this project, we plan to use React.js.
 
 [Birthday App with React.js](https://www.youtube.com/watch?v=a_7Z7C_JCyo) 
 
+[React Fundamentals](https://www.youtube.com/watch?v=4UZrsTqkcW4&t=0s)
+
+
+
+
 
 
 
