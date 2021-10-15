@@ -4,7 +4,7 @@ Project for CS405- Software Engineering
 
 # Meet the Group!:
 [Roderick Bishop](https://www.linkedin.com/in/roderickebishop/)
-[Ramon Lavendar](https://www.linkedin.com/in/ramon-lavender-47b081145/)
+[Ramon Lavender](https://www.linkedin.com/in/ramon-lavender-47b081145/)
 [Kristin Barrett](https://www.linkedin.com/in/kristin-barrett-104287187/)
 
 
