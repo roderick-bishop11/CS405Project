@@ -175,7 +175,7 @@ main {
   margin-bottom: 0;
 }
 .container button {
-  color: var(--clr-white);
+  color: var(--clr-black);
   display: block;
   width: 100%;
   border-color: transparent;
