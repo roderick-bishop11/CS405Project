@@ -1,4 +1,5 @@
 export default [
+  //we can edit this data and the mapping in list.js to match our person data sa defined in our UML's
   {
     id: 1,
     name: 'Bertie Yates',
