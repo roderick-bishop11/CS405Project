@@ -24,8 +24,13 @@ function App() {
             <h3>{name}</h3>
           </div>
           </div>
+          
+          <div className="button">
+            <button className="btn" onClick={() => removePerson(id)}
+            Dismiss </button>
+          </div>
+        </div> 
       )
-                
-}
-
+     }
+    }
 export default App;
