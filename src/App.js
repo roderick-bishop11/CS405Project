@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import data from './data';
 import List from './List';
 function App() {
-  const [people, set People] = useState{data}
+  const [person] = useState{data}
   const removePerson = (id) => {
     let newPerson = people.filter((person) => person.id !== id)
     setPeople(newPerson)
@@ -20,6 +20,13 @@ function App() {
             img scr={image} alt={name} />
           </div>
             
+      //carousel
+          <li><img class="img1" src='https://res.cloudinary.com/diqqf3eq2/image/upload/v1595959131/person-2_ipcjws.jpg',></li>
+      // add the rest of the images in a list "li"
+      
+      // add buttons for navigation 
+
+      
           <div>
             <h3>{name}</h3>
           </div>
