@@ -3,12 +3,14 @@ import data from './data';//Imported data models
 import List from './List';//Imported structure of list
 //Beginning of app
 function App() {
-  //Initialize the Variables that need to be tracked using useState()
+//Initialize the Variables that need to be tracked using useState()
   const [people] = useState(data)
   const [setPerson] = useState(data)
   //A new value of id is given to the variable from newPerson
   //newPerson variable is assigned a new person given the current id and the given id
   //  are not the same value or type
+  
+//   const [people, setPerson] = useState(data)
   const removePerson = (id) => {
     let newPerson = people.filter((person) => person.id !== id)
     setPerson(newPerson)
@@ -82,6 +84,33 @@ export default App
 //   </>
 //   )
 // }
+
+
+//new code from here:
+return (
+  <main>
+    <section className='container'>
+      <h3>{people.length} birthdays today</h3>
+
+      <div class="carousel">
+        <button class="carousel_prev_btn" id="previous"></button>
+        <div class="carousel_images">
+          {/* I think there is something missing on line below, still looks like a list from List.js, maybe we're missing some CSS???  */}
+          <List people={people} />  
+        </div>
+        <button class="carousel_next_btn" id="next"></button>
+        <button onClick={() => setPerson([])}>clear all</button>
+      </div>
+
+    </section>
+  </main>
+)
+}
+export default App
+
+
+
+
 
 // this is also a viable option, We'd need to edit the CSS tho.
 // const [people, setPeople] = useState(data)
