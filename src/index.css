@@ -1,5 +1,5 @@
 /*
-=============== 
+===============
 Variables
 ===============
 */
@@ -44,7 +44,7 @@ Variables
   --clr-pink: #f28ab2;
 }
 /*
-=============== 
+===============
 Global Styles
 ===============
 */
@@ -140,6 +140,48 @@ main {
   align-items: center;
 }
 
+.carousel {
+  align-items: center;
+  display: flex;
+  overflow: hidden;
+  margin: auto;
+  width: 300px;
+  position: relative;
+
+  &__images {
+    display: flex;
+    transform: translateY(0);
+    transition: transform .020s;
+  }
+}
+&__button {
+  background: red;
+  border: 0;
+  border-radius: 50%;
+  color: black
+  cursor:pointer;
+  font-size: 1.25rem
+  font-weight:bold;
+  height: 5rem;
+  opacity: 0.25;
+  position: absolute;
+  transition: opacity .25s;
+  width: 5rem;
+  z-index: 1;
+
+  &.previous {
+    left: 4px;
+  }
+
+  &.next {
+    right: 4px;
+  }
+
+  &.hover {
+    opacity: .7;
+  }
+}
+}
 .container {
   width: 90vw;
   margin: 5rem 0;
