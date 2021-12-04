@@ -2,14 +2,15 @@ import React, { useState } from 'react';
 import data from './data';
 import List from './List';
 function App() {
-  const [people, setPeople] = useState(data)
+  const [people] = useState(data)
+  const [setPerson] = useState(data)
   const removePerson = (id) => {
     let newPerson = people.filter((person) => person.id !== id)
-    setPeople(newPerson)
+    setPerson(newPerson)
   }
- 
 
-  //commented out code from our original 
+
+  //commented out code from our original
   // return <h2>reminder project setup</h2>;
 //   return (
 //     <>
@@ -50,19 +51,27 @@ function App() {
 //         </div>
 //       )
 //     })}
-//   </>  
+//   </>
 //   )
-// } 
+// }
 
 
-//new code from here: 
+//new code from here:
 //we should be able to define the crousel somewhere around line 64
 return (
   <main>
     <section className='container'>
       <h3>{people.length} birthdays today</h3>
-      <List people={people} /> {/* <--this is an import from list.js We should be able to replace this with the carousel and manipulate the CSS here  */}
-      <button onClick={() => setPeople([])}>clear all</button>
+
+      <div class="carousel">
+        <button class="carousel_prev_btn" id="previous"></button>
+        <div class="carousel_images">
+          <List people={people} />
+        </div>
+        <button class="carousel_next_btn" id="next"></button>
+        <button onClick={() => setPeople("")}>clear all</button>
+      </div>
+
     </section>
   </main>
 )
@@ -73,7 +82,7 @@ export default App
 
 
 
-// this is also a viable option, We'd need to edit the CSS tho. 
+// this is also a viable option, We'd need to edit the CSS tho.
 // const [people, setPeople] = useState(data)
 
 // const removePerson = (id) => {
