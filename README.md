@@ -28,6 +28,8 @@ We used a note-taking platform, Notion, for our kanban boards. Although github h
 
 ## How to run
 
+Our app was build using `create-react-app` and `npm`. This project can also be build using Yarn, altough all resources below and steps in this README use `npm`
+
  1. Clone the repo via HTTPS or the Github CLI.
  2. Make sure you have node installed on your machine. To check which version you have installed, run `$ node -v` . If not installed, you can download Node directly from their [website](https://nodejs.org/en/download/). If your node version is out of date, you can use this article that entails how to update using nvm, npm, or binary pkgs.
  3. With the everything installed/updated, `cd` into the cloned repo and run `npm start` if you're using npm. For any other package manager, utilize their documentation to start the application.
@@ -48,3 +50,16 @@ We used a note-taking platform, Notion, for our kanban boards. Although github h
 [Bootstrap JavaScript Carousel](https://www.w3schools.com/bootstrap/bootstrap_ref_js_carousel.asp)
 
 [Carousel structure](https://medium.com/allenhwkim/how-to-build-a-carousel-in-pure-javascript-98d758a18811)
+
+
+## Contribution
+
+If you'd like to contribute, feel free to fork main, and draft a PR. Feel free to also message us on LinkedIn with upgrade suggestions!
+
+## Next steps
+
+- Overhaul UI(styling and material UI components)
+- Lifecycle Methods for event handling
+- Custom Photos
+- Scaffolding for future functionality
+- comments branch for verbose comments on the most current version of Main so students can understand.
