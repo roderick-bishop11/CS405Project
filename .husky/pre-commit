@@ -1,4 +1,3 @@
 #!/bin/sh
-. "$(dirname "$0")/_/husky.sh"
 
 echo "Husky is working on the pre-commit hook"
