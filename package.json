@@ -19,7 +19,9 @@
     "build": "CI= react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "lint": "eslint 'src/**/*.{js, md}'",
+    "lint:fix": "eslint 'src/**/*.{js, md}' --fix"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -35,8 +37,14 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
+    },
   "devDependencies": {
-    "husky": "^7.0.0"
+    "eslint": "^8.14.0",
+    "eslint-plugin-react": "^7.29.4",
+    "husky": "^7.0.0",
+    "lint-staged": "^12.4.0"
+  },
+  "lint-staged": {
+    "*.{js,md}": ["npx run lint:fix"]
   }
 }

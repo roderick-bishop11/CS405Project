@@ -1,3 +1,5 @@
 #!/bin/sh
 
-echo "Husky is working on the pre-commit hook"
+echo "Linting before committing...\n"
+
+npx lint-staged
