@@ -2,16 +2,18 @@ const Data = [
 	{
 		id: 1,
 		name: "Bertie Yates",
-		age: 29,
+		age: 18,
 		image:
       "https://res.cloudinary.com/diqqf3eq2/image/upload/v1595959131/person-2_ipcjws.jpg",
+		birthday:"2002-11-03",
 	},
 	{
 		id: 2,
 		name: "Hester Hogan",
-		age: 32,
+		age: 25,
 		image:
       "https://res.cloudinary.com/diqqf3eq2/image/upload/v1595959131/person-3_rxtqvi.jpg",
+		birthday:"1997-05-21",
 	},
 	{
 		id: 3,
